@@ -1,0 +1,170 @@
+
+body {
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+}
+@import "search";
+@import "header";
+@import "contact";
+@import "footer";
+// about page
+$subTitleFontSize:30px;
+$subTitleBotLine:#E9E9E9;
+$fontDarkGrey:#323A45;
+$highlightGreen:#53B778;
+$topIcon:#8D8D8E;
+#about 
+{
+
+    .banner{
+    margin-top:20px;
+        width:100%;
+        height:400px;
+        background-image:url("../img/about-banner.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        .bannerText
+        {
+           
+            padding-top:50px;
+            text-align:left;
+            h1 
+            {
+                color:white;
+                font-size:60px;
+                font-weight:600;
+                font-family: 'Raleway', sans-serif;
+            }
+            p {
+                margin-top:20px;
+                color:white;
+                font-size:20px;
+                font-family: 'Raleway', sans-serif;
+            }
+            button
+            {
+                margin-top:30px;
+                padding:15px 30px;
+                border:2px solid $highlightGreen;
+                border-radius:0px;
+                background:transparent;
+                color:white;
+                transition: 0.3s all ease;
+                &:hover {                  
+                    background:$highlightGreen;
+                }
+            }
+        }
+    }
+    .successPartners
+    {
+        width:100%;
+        margin-top:85px;
+        .successPartnersTitle
+        {
+          
+            margin:0px auto;
+            border-bottom:1px solid $subTitleBotLine; 
+            font-family: 'Raleway', sans-serif;
+            h1 
+            {
+                color:$highlightGreen;
+                font-size:$subTitleFontSize;
+            }
+        }
+        .successPartnersMain {
+           
+            margin:20px auto;
+            .successPartnersMainText
+            {
+                width:60%;
+                display:inline-block;
+                vertical-align: top;
+                p {
+                    font-size: 18px;
+                    color:$topIcon;
+                }
+            }
+            .successPartnersMainImages
+            {
+                width:35%;
+                margin-left:20px;
+                display:inline-block;
+                vertical-align: top;
+                img {
+                    width:90%;
+                }
+            }
+        }
+    }
+    .knowMore
+    {
+        width:100%;
+        margin-top:85px;
+        .knowMoreTitle
+        {
+            width:80%;
+            margin:0px auto;
+            border-bottom:1px solid $subTitleBotLine; 
+            font-family: 'Raleway', sans-serif;
+            h1 
+            {
+                color:$highlightGreen;
+                font-size:$subTitleFontSize;
+            }
+        }
+        .knowMoreMain {
+            width:80%;
+            margin:150px auto;
+            .knowMoreText
+            {
+                width:100%;
+                text-align:center;
+                .knowMoreTextItem
+                {
+                    margin:0px 5px;
+                    padding:0px 10px 60px 0px; 
+                    width:30%;
+                    border:1px solid lightgray;
+                    display:inline-block;
+                    transition:0.3s all ease;
+                    &:hover .knowMoreIconsItem {
+                        color:white;
+                        background:$highlightGreen;
+                    }
+                    &:hover h1 {
+                        color:$highlightGreen;
+                    }
+
+                    .knowMoreIconsItem
+                    {
+                        transition:0.3s all ease;
+                        position:relative;
+                        bottom:80px;
+                        width:160px;
+                        height:160px;
+                        border-radius:50%;
+                        background:#F5F6F7;
+                        display:inline-block;
+                        i {
+                            font-size: 68px;
+                            margin-top:35px;
+                        }
+                    }
+                    h3{
+                       
+                        transition:0.3s all ease;
+                        margin-top:0;
+                        font-size:$subTitleFontSize;
+                    }
+                    p {
+                        font-size:18px;
+                        color:$topIcon;
+                    }
+                }
+            }
+        }
+    }
+}
+
